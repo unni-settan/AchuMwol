@@ -9,11 +9,11 @@
 <img src="https://i.imgur.com/EmslkJh.jpeg" width="300" height="250"/>
 </p>
   <p align="center">
-<a href="https://github.com/unni-settan"><img title="Author" src="https://img.shields.io/badge/Author-Unni-unni-settan/AchuMwol?color=blue&style=for-the-badge&logo=whatsapp"></a>
+<a href="https://github.com/unni-settan"><img title="Author" src="https://img.shields.io/badge/Author-unni-unni-settan/AchuMwol?color=blue&style=for-the-badge&logo=whatsapp"></a>
 </p>
 </div>
 <p align="center">
-Project created by <a href="https://github.com/cyberchekuthan">Amalser_v2</a> to make it public
+Project created by <a href="https://github.com/unni-settan">AchuMwol</a> to make it public
     <br>
        | © |
         Reserved |
