@@ -84,15 +84,15 @@ All setvars are
  To change bad word remove list
  .setvar THERI_LIST:badword,badword
 
- To change AMALSER bot name
+ To change ACHUMWOL bot name
  .setvar BOT_NAME:your bot name
 
  To get a song when your number is mentioned
  .setvar TAG_REPPLY:your jid 
 
-     *happy using Amalser bot ❣️*
+     *happy using AchuMwol bot ❣️*
 
-*Editing And Devaloper : Amal -Amalser*
+*Editing And Devaloper : unn-settan  -AchuMwol*
 
 *Erorr Fixing : Farhan -Julie Mwol 💌*
 
