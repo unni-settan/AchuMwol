@@ -46,7 +46,7 @@
             "UNMUTE_DESC": "Unmute the group chat. Anyone can send a message.",
             "UNMUTED": "```The group chat has unmuted!```",
             "INVITE_DESC": "Provides the group's invitation link.",
-            "INVITE": "```Invitation link: ```"
+            "INVITE": "```ɪɴᴠɪᴛᴀᴛɪᴏɴ ʟɪɴᴋ: ```"
         },
         "locate": {
             "L_DESC": "It send your location.",
@@ -80,9 +80,9 @@
         },
         "heroku": {
             "RESTART_DESC": "Restart WhatsAsena",
-            "RESTART_MSG": "```Restarting...```",
+            "RESTART_MSG": "```Restarting AchuMwol...```",
             "SHUTDOWN_DESC": "Shutdown WhatsAsena",
-            "SHUTDOWN_MSG": "```Shutting down ⛔```",
+            "SHUTDOWN_MSG": "```Shutting down AchuMwol ⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
             "DYNO_TOTAL": "```Total Quota```",
             "DYNO_USED": "```Quota used```",
@@ -209,7 +209,7 @@
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
             "NOT_FOUND": "*I couldn't find anything :(*",
-            "SEARCHING": "* 🔎 Searching...*",
+            "SEARCHING": "* 🔎 sᴇᴀʀᴄʜɪɴɢ...*",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for related pics on Google.",
             "IMG": "Uploading photo ```{}``` number ```{} ```..."
@@ -224,7 +224,7 @@
             "SYSD_DESC": "Shows the system properties."
         },
         "tagall": {
-            "TAGALL_DESC": "Tags everyone in the group.",
+            "TAG_DESC": "Tags everyone in the group.",
             "ADMİN": "*I am not admin in this group!*",
             "SCAN": "Checks whether the entered number is registered on WhatApp.",
             "NO": "*Please Enter Any Phone Number!*\n*Example:* ```.scan 90xxxx```",
@@ -239,14 +239,14 @@
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\n*To update Bot give this command: .update now*\n\n*Supporting Group Join First: https://chat.whatsapp.com/CbRlEux876XFsWQfIlOKty*\n\nChanges:\n```",
+            "UPDATE": "*Your Achubot is completely up-to-date!*",
+            "NEW_UPDATE": "*New update available for AchuBot!*\n\n*To update Bot give this command: .update now*\n\n*Supporting Group Join First: https://chat.whatsapp.com/CbRlEux876XFsWQfIlOKty*\n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "Updating..💌",
+            "UPDATING": "Updating Your AchuMwol Bot..💌",
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
             "UPDATED": "*Updated ✅️*",
             "UPDATED_LOCAL": "*✅ Updated!*",
-            "AFTER_UPDATE": "*Amalser Restarting ✅️*",
+            "AFTER_UPDATE": "*AchuMwol Restarting ✅️*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
