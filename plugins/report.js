@@ -8,7 +8,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Config = require('../config');
 
 const Language = require('../language');
-const Lang = Language.getString('tag');
+const Lang = Language.getString('tagall');
 
 if (Config.WORKTYPE == 'private') {
     Asena.addCommand({pattern: 'warn ?(.*)', fromMe: true, desc: Lang.REPORT}, (async (message, match) => {
