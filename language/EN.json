@@ -46,7 +46,7 @@
             "UNMUTE_DESC": "Unmute the group chat. Anyone can send a message.",
             "UNMUTED": "```The group chat has unmuted!```",
             "INVITE_DESC": "Provides the group's invitation link.",
-            "INVITE": "```Invitation link: ```"
+            "INVITE": "```ɪɴᴠɪᴛᴀᴛɪᴏɴ ʟɪɴᴋ: ```"
         },
         "locate": {
             "L_DESC": "It send your location.",
@@ -80,7 +80,7 @@
         },
         "heroku": {
             "RESTART_DESC": "Restart WhatsAsena",
-            "RESTART_MSG": "```Restarting...```",
+            "RESTART_MSG": "```ʀᴇsᴛᴀʀᴛɪɴɢ ᴀᴄʜᴜᴍᴡᴏʟ...```",
             "SHUTDOWN_DESC": "Shutdown WhatsAsena",
             "SHUTDOWN_MSG": "```Shutting down Achubot⛔```",
             "DYNO_DESC": "Check heroku dyno usage",
