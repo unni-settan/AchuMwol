@@ -172,7 +172,7 @@
             "REMOVEBG_DESC": "Removes the background of the photos.",
             "NEED_PHOTO": "*Give me a photo!*",
             "NO_API_KEY": "*You don't have an API key!*\nYou can get it here: remove.bg.",
-            "RBGING": "```Removing background...```"
+            "RBGING": "```ʀᴇᴍᴏᴠɪɴɢ ʙᴀᴄᴋɢʀᴏᴜɴᴅ...```"
         },
         "scrapers": {
             "TRANSLATE_DESC": "It translates with Google Translate. You must reply any message.",
@@ -194,12 +194,12 @@
             "ISONG_DESC": "Uploads the song you wrote for ios users.",
             "NEED_TEXT_SONG": "*Please write a song!*\n*Example:* ```.song eminem - rap god```",
             "NO_RESULT": "*I couldn't find anything :(*",
-            "DOWNLOADING_SONG": "Downloading",
+            "DOWNLOADING_SONG": "ᴅᴏᴡɴʟᴏᴀᴅ ᴄʜᴇʏʏᴜɴᴜ",
             "NAMEY": "NAME",
             "URL": "LINK",
             "THUMB": "THUMB",
             "RATING": "RATING",
-            "UPLOADING_SONG": "*Uploading*",
+            "UPLOADING_SONG": "*ᴜᴘʟᴏᴀᴅ ᴄʜᴇʏʏᴜɴᴜ*",
             "VIDEO_DESC": "Downloads video from YouTube.",
             "NEED_VIDEO": "*Please write a video link!*\n*Example:* ```.video https://www.youtube.com/watch?v=nAFlVm5qeBc```",
             "DOWNLOADING_VIDEO": "*Downloading*",
@@ -209,7 +209,7 @@
             "NEED_WORDS": "```Please write a few words!```",
             "GETTING_VIDEOS": "```I'm bringing videos...```",
             "NOT_FOUND": "*I couldn't find anything :(*",
-            "SEARCHING": "* 🔎 Searching...*",
+            "SEARCHING": "* 🔎 sᴇᴀʀᴄʜɪɴɢ...*",
             "WIKI_DESC": "Searches query on Wikipedia.",
             "IMG_DESC": "Searches for related pics on Google.",
             "IMG": "Uploading photo ```{}``` number ```{} ```..."
@@ -217,14 +217,14 @@
         "sticker": {
             "STICKER_DESC": "It converts your replied photo or video to sticker.",
             "NEED_REPLY": "*Reply to a photo or video!*",
-            "DOWNLOADING": "```Converting..✨️```"
+            "DOWNLOADING": "```ɴɪssᴀʀᴀᴍ..✨️```"
         },
         "system_stats": {
             "ALIVE_DESC": "Does bot work?",
             "SYSD_DESC": "Shows the system properties."
         },
         "tagall": {
-            "TAGALL_DESC": "Tags everyone in the group.",
+            "tag_DESC": "Tags everyone in the group.",
             "ADMİN": "*I am not admin in this group!*",
             "SCAN": "Checks whether the entered number is registered on WhatApp.",
             "NO": "*Please Enter Any Phone Number!*\n*Example:* ```.scan 90xxxx```",
@@ -240,13 +240,13 @@
         "updater": {
             "UPDATER_DESC": "Checks the update.",
             "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\n*To update Bot give this command: .update now*\n\n*Supporting Group Join First: https://chat.whatsapp.com/CbRlEux876XFsWQfIlOKty*\n\nChanges:\n```",
+            "NEW_UPDATE": "*New update available for AchuMwol Bot!*\n\n*To update Bot give this command: .update now*\n\n*Supporting Group Join First: https://chat.whatsapp.com/IZpBarScQLP5ZaCqe53ZiB*\n\nChanges:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "Updating..💌",
+            "UPDATING": "AchuMwol is updating 💜💕",
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
-            "UPDATED": "*Updated ✅️*",
+            "UPDATED": "*AchuMwol is Updated ✅️*",
             "UPDATED_LOCAL": "*✅ Updated!*",
-            "AFTER_UPDATE": "*Amalser Restarting ✅️*",
+            "AFTER_UPDATE": "*Achumwol Restarting ✅️*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
