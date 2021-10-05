@@ -21,7 +21,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
 
-Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+Asena.addCommand({pattern: 'tag ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
    
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -69,7 +69,7 @@ else if (Config.WORKTYPE == 'public') {
     
   
     
-    Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'tag ?(.*)', fromMe: true, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
         
     if (!message.reply_message) {
         if (match[1] !== '') {
@@ -131,7 +131,7 @@ async function checkImAdmin(message, user = message.client.user.jid) {
     return sonuc.includes(true);
 }
     
-    Asena.addCommand({pattern: 'tagall ?(.*)', fromMe: false, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
+    Asena.addCommand({pattern: 'tag ?(.*)', fromMe: false, dontAddCommandList: true, desc: Lang.TAGALL_DESC }, (async (message, match) => {
          var us = await checkUsAdmin(message);
          if (!us) return await message.client.sendMessage(message.jid,Lang.PLKADMIN,MessageType.text ,{quoted: message.data });
 
