@@ -6,7 +6,7 @@
 </p>
 <div align="center">
   <p align="center">
-<img src="https://i.imgur.com/EmslkJh.jpeg" alt="GIF" width="500" height="500"/>
+<img src="https://i.imgur.com/EmslkJh.jpeg" alt="GIF" width="300" height="300"/>
 </p>
   <p align="center">
 <a href="https://github.com/unni-settan"><img title="Author" src="https://img.shields.io/badge/Author-Amal-unni-settan/AchuMwol?color=blue&style=for-the-badge&logo=whatsapp"></a>
