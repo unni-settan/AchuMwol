@@ -150,7 +150,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Amalser working 💌')
+            chalk.green.bold('AchuMwol is working 💕')
         );
     });
     
