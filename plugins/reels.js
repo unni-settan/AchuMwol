@@ -1,7 +1,7 @@
 /* Copyright © 2021 Farhan.
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-Farhan Coded - Amalser
+Farhan Coded - AchuMwol
 */
 
 const Asena = require('../events');
@@ -21,9 +21,9 @@ Asena.addCommand({pattern: 'insta ?(.*)', fromMe: false, desc: "Downloads from i
 
     reply = await message.client.sendMessage(message.jid,UPLOAD_ING , MessageType.text, { quoted: message.data });
     
-    if (type === 'image') return await message.sendMessage(data, MessageType.image, { caption: "*Codded by JulieMwol*", quoted: message.data })
+    if (type === 'image') return await message.sendMessage(data, MessageType.image, { caption: "*Codded by AchuMwol*", quoted: message.data })
     
-    if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: "*Codded by JulieMwol*", quoted: message.data })
+    if (type === 'video') return await message.sendMessage(data, MessageType.video, { caption: "*Codded by AchuMwol*", quoted: message.data })
     
 });
     
