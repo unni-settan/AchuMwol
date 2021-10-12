@@ -109,12 +109,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         );
         console.log(
             chalk.blueBright.italic('Confirming password...')
-        );
-        if (config.AFPLK == 'AFAMK' || config.AFPLK == 'afamk' || config.AFPLK == 'Afamk' || config.AFPLK == 'pinky') {
-        //thanks to afnanplk
-        console.log(
-            chalk.green.bold('thanks for watching -key cofirmed-')
-        );
 
         console.log(
             chalk.blueBright.italic('⬇️ Installing external plugins...')
@@ -143,7 +137,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('Achumwol working 💌')
+            chalk.green.bold('AchuMwol is working 💖')
         );
     });
     
