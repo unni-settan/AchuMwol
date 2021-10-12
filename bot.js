@@ -1,8 +1,6 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-WhatsAsena - Yusuf Usta
+/* Copyright (C) 2020 Yusuf Usnta.
+RECODDED BY AFNANPPLK
+Plk  
 */
 
 const fs = require("fs");
@@ -10,12 +8,12 @@ const path = require("path");
 const events = require("./events");
 const chalk = require('chalk');
 const config = require('./config');
-const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./julie/');
+const {WAConnection, MessageType, Presence} = require('@adiwajshing/baileys');
+const {Message, StringSession, Image, Video} = require('./whatsasena/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
-const axios = require('axios');
 const got = require('got');
+const axios = require('axios');
 
 // Sql
 const WhatsAsenaDB = config.DATABASE.define('WhatsAsena', {
@@ -69,7 +67,7 @@ async function whatsAsena () {
     
     
     const conn = new WAConnection();
-    conn.version = [2, 2126, 14];
+    conn.version = [2,2121,7];
     const Session = new StringSession();
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
@@ -99,7 +97,7 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.bold('Version:')} ${chalk.red.bold(config.VERSION)}
 
-${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
+${chalk.blue.italic('ℹ️ Connecting to WhatsApp... Please wait.')}`);
     });
     
 
@@ -107,8 +105,6 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         console.log(
             chalk.green.bold('✅ Login successful!')
         );
-        console.log(
-            chalk.blueBright.italic('Confirming password...')
 
         console.log(
             chalk.blueBright.italic('⬇️ Installing external plugins...')
@@ -127,7 +123,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.blueBright.italic('⬇️Installing plugins...')
+            chalk.blueBright.italic('⬇️  Installing plugins...')
         );
 
         fs.readdirSync('./plugins').forEach(plugin => {
@@ -137,7 +133,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
         });
 
         console.log(
-            chalk.green.bold('AchuMwol is working 💖')
+            chalk.green.bold('Achumwol working perfectly 💘')
         );
     });
     
@@ -151,48 +147,27 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             await conn.updatePresence(msg.key.remoteJid, Presence.unavailable);
         }
 
-        if (config.WELCOME == 'pp' || config.WELCOME == 'Pp' || config.WELCOME == 'PP' || config.WELCOME == 'pP' ) {
-            if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-                    // Thanks to Lyfe
-                    var gb = await getMessage(msg.key.remoteJid, 'goodbye');
-                    if (gb !== false) {
-                        let pp
-                        try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
-                    }
-                    return;
-                } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-                    // welcome
-                    var gb = await getMessage(msg.key.remoteJid);
-                    if (gb !== false) {
-                       let pp
-                        try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
-                        await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
-                        await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
-                    }
-                    return;
-                }
+        if (msg.messageStubType === 32 || msg.messageStubType === 28) {
+            // Görüşürüz Mesajı
+            var gb = await getMessage(msg.key.remoteJid, 'goodbye');
+            if (gb !== false) {
+                let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
             }
-            else if (config.WELCOME == 'gif' || config.WELCOME == 'Gif' || config.WELCOME == 'GIF' || config.WELCOME == 'GIf' ) {
-            if (msg.messageStubType === 32 || msg.messageStubType === 28) {
-                    // Thanks to ichus-Sophia
-                    var gb = await getMessage(msg.key.remoteJid, 'goodbye');
-                    if (gb !== false) {
-                        var sewqueenimage = await axios.get(config.BYE_GIF, { responseType: 'arraybuffer' })
-                        await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
-                    }
-                    return;
-                } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
-                    // Thanks to Ravindu Manoj
-                    var gb = await getMessage(msg.key.remoteJid);
-                    if (gb !== false) {
-                    var sewqueenimage = await axios.get(config.WEL_GIF, { responseType: 'arraybuffer' })
-                    await conn.sendMessage(msg.key.remoteJid, Buffer.from(sewqueenimage.data), MessageType.video, {mimetype: Mimetype.gif, caption: gb.message});
-                    }
-                    return;
-                }
-             }
+            return;
+        } else if (msg.messageStubType === 27 || msg.messageStubType === 31) {
+            // Hoşgeldin Mesajı
+            var gb = await getMessage(msg.key.remoteJid);
+            if (gb !== false) {
+               let pp
+                try { pp = await conn.getProfilePicture(msg.messageStubParameters[0]); } catch { pp = await conn.getProfilePicture(); }
+                await axios.get(pp, {responseType: 'arraybuffer'}).then(async (res) => {
+                await conn.sendMessage(msg.key.remoteJid, res.data, MessageType.image, {caption:  gb.message }); });
+            }
+            return;
+        }
 
         events.commands.map(
             async (command) =>  {
@@ -228,12 +203,20 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
                         else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
                     }
-  
+                    
+                    else if ((config.MAHN !== false && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && config.MAHN.includes(',') ? config.MAHN.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.MAHN || config.MAHN.includes(',') ? config.MAHN.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.MAHN)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                    }
+    
                     if (sendMsg) {
                         if (config.SEND_READ && command.on === undefined) {
                             await conn.chatRead(msg.key.remoteJid);
                         }
-                       
+                        
                         var match = text_msg.match(command.pattern);
                         
                         if (command.on !== undefined && (command.on === 'image' || command.on === 'photo' )
@@ -262,9 +245,8 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                                     'Gerçekleşen Hata: ' + error + '\n\n'
                                     , MessageType.text);
                             } else {
-                                await conn.sendMessage(conn.user.jid, '*~_________~ AchuMwol ~______~*' +
-                                    '\n*🌀 Subcribe this channel other wise chance to get erorr: https://youtube.com/channel/UCxRHOVomU9Z0w1Vmz8aX-Ig*' +
-                                    '\n\n*⚠️ ' + error + '*\n'
+                                await conn.sendMessage(conn.user.jid, 'ACHUMWOL_🙀_[error] ' +
+                                    '\n\n*👻 ' + error + '*\n'
                                     , MessageType.text);
                             }
                         }
@@ -273,7 +255,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
             }
         )
     });
-
+    
     try {
         await conn.connect();
     } catch {
@@ -290,4 +272,3 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
 }
 
 whatsAsena();
-
