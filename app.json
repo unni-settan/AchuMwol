@@ -1,6 +1,6 @@
 {
-    "name": "AchuMwol ",
-    "description": "AchuMwol is the Modified Version of WhatsAsena, Made By @farhan-dqz with Baileys.",
+    "name": "AchuMwol",
+    "description": "AchuMwol is the Modified Version of WhatsAsena,  .",
     "logo": "https://i.imgur.com/EmslkJh.jpeg",
     "keywords": ["whatsapp", "userbot", "julie", "WhatsAsena", "mwol", "bot", "ai"],
     "repository": "https://github.com/unni-settan/AchuMwol",
@@ -51,11 +51,6 @@
             "required": true,
             "value": "false"
         },
-              "BGM_DURATION": {
-            "description": "FUNY BGM DURATION  codded by SAIDALI",
-            "required": false,
-            "value": "29999600"
-        },
         "AUTO_BİO": {
             "description": " Set true for auto date, time in biography.",
             "required": true,
@@ -103,7 +98,7 @@
         "TAG_HEADER": {
             "description": "Heading when taging all",
             "required": false,
-            "value": "Hi NANBAA 💙"
+            "value": "hear me friends"
         },
         "BLOCK_CHAT": {
             "description": "Choose in which chat the bot won't work there. Ex: 905xxxx && 905xxxx-1xxx or 905xxxx,905xxx...",
@@ -128,7 +123,7 @@
         "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "•━━━━╼⤏Achumwol⤎╾━━━•"
+            "value": "•ᴀᴄͥʜͭᴜᷤ ᴍᴡͫᴏͤʟ•"
         },
         "WORK_TYPE": {
             "description": "AchuMwol Working Type. If you use “public”, everyone can use the bot. Else if you use “private”, only you can use your bot.",
@@ -151,7 +146,9 @@
         "ALIVE_MESSAGE": {
             "description": "Customizable Alive Message! Use => default, to change back.",
             "required": false,
-            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands```"
+            "value": "\n ```I Am Alive !!!```\n\n```Type``` *.help* ```for commands```\n\n```coded by Akshayserc```"
+
+       
         },
         "BAN_MESSAGE": {
             "description": "Customizable Ban Message! Use => default, to change back.",
